@@ -435,31 +435,31 @@ export const Conditions: {[k: string]: ModdedConditionData & {innateName?: strin
 			this.add(`c:|${getName('Blitz')}|https://www.youtube.com/watch?v=lPGipwoJiOM`);
 		},
 	},
-	breadstycks: {
+	breadey: {
 		noCopy: true,
 		onStart(pokemon) {
 			if (enemyStaff(pokemon) === "Mad Monty") {
-				this.add(`c:|${getName('Breadstycks')}|Ope, sorry`);
+				this.add(`c:|${getName('Breadey')}|Ope, sorry`);
 			} else {
-				this.add(`c:|${getName('Breadstycks')}|I loeuf you <3`);
+				this.add(`c:|${getName('Breadey')}|I loeuf you <3`);
 			}
 		},
 		// onSwitchOut implemented in ability instead
 		onFoeSwitchIn(pokemon) {
 			if (pokemon.name === "Mad Monty") {
-				this.add(`c:|${getName('Breadstycks')}|Ope, sorry`);
+				this.add(`c:|${getName('Breadey')}|Ope, sorry`);
 			}
 		},
 		onFaint() {
-			this.add(`c:|${getName('Breadstycks')}|Oh, ma vie... c'est 'pitable'...`);
+			this.add(`c:|${getName('Breadey')}|Oh, ma vie... c'est 'pitable'...`);
 		},
 		onFoeFaint(target, source, effect) {
 			if (source === this.effectState.target && effect?.name === 'Painful Exit') {
-				this.add(`c:|${getName('Breadstycks')}|Ashes to ashes, crust to crust.`);
+				this.add(`c:|${getName('Breadey')}|Ashes to ashes, crust to crust.`);
 			} else if (target.name === "Mad Monty") {
-				this.add(`c:|${getName('Breadstycks')}|G.G, weather you like it or not`);
+				this.add(`c:|${getName('Breadey')}|G.G, weather you like it or not`);
 			} else {
-				this.add(`c:|${getName('Breadstycks')}|Ope, someone's swallowing fishes.`);
+				this.add(`c:|${getName('Breadey')}|Ope, someone's swallowing fishes.`);
 			}
 		},
 		innateName: "Well-Baked Body",
@@ -1668,7 +1668,7 @@ export const Conditions: {[k: string]: ModdedConditionData & {innateName?: strin
 			case 'beowulf':
 				message = 'BEE';
 				break;
-			case 'breadstycks':
+			case 'breadey':
 				message = 'BREADBOWL';
 				break;
 			case 'clerica':
@@ -1939,7 +1939,7 @@ export const Conditions: {[k: string]: ModdedConditionData & {innateName?: strin
 		onStart(pokemon) {
 			this.add(`c:|${getName('RSB')}|Time to take a bite out of crime!`);
 			const dog = (this.toID(enemyStaff(pokemon)));
-			if (dog === 'rsb' || dog === 'shiloh' || dog === 'valerian' || dog === 'breadstycks' || dog === 'yuki') {
+			if (dog === 'rsb' || dog === 'shiloh' || dog === 'valerian' || dog === 'breadey' || dog === 'yuki') {
 				this.add(`c:|${getName('RSB')}|DOGGO!`);
 			}
 		},

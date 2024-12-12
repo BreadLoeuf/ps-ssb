@@ -989,7 +989,7 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 		type: "Water",
 	},
 
-	// Breadstycks
+	// Breadey
 	bakersdouzeoff: {
 		accuracy: true,
 		basePower: 0,

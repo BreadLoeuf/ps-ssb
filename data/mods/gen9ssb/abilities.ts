@@ -449,16 +449,16 @@ export const Abilities: {[k: string]: ModdedAbilityData} = {
 		flags: {breakable: 1},
 	},
 
-	// Breadstycks
+	// Breadey
 	painfulexit: {
 		shortDesc: "When this Pokemon switches out, foes lose 25% HP.",
 		name: "Painful Exit",
 		onBeforeSwitchOutPriority: -1,
 		onBeforeSwitchOut(pokemon) {
 			if (enemyStaff(pokemon) === "Mad Monty") {
-				this.add(`c:|${getName('Breadstycks')}|Welp`);
+				this.add(`c:|${getName('Breadey')}|Welp`);
 			} else {
-				this.add(`c:|${getName('Breadstycks')}|Just kidding!! Take this KNUCKLE SANDWICH`);
+				this.add(`c:|${getName('Breadey')}|Just kidding!! Take this KNUCKLE SANDWICH`);
 			}
 			for (const foe of pokemon.foes()) {
 				if (!foe || foe.fainted || !foe.hp) continue;

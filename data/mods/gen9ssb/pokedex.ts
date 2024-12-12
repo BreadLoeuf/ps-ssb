@@ -155,7 +155,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		abilities: {0: "Blitz of Ruin"},
 	},
 
-	// Breadstycks
+	// Breadey
 	dachsbun: {
 		inherit: true,
 		abilities: {0: "Painful Exit"},
